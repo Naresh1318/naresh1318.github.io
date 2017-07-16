@@ -9,6 +9,7 @@
 <!-- iOS Safari -->
 <meta name="apple-mobile-web-app-status-bar-style" content="#404040">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="'stylesheet" href="css/w3css.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy">
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:600" rel="stylesheet">
@@ -16,12 +17,12 @@
 <link rel="stylesheet" href="css/my_website.css">
 <link rel="icon" type="image/x-icon" href="images/person.ico" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
 <style>
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
 .bgimg {
   background-size: cover;
-  background: #FFFFFF no-repeat center;
   min-height: 100%;
 }
 
@@ -32,19 +33,48 @@ a {
 .description{
   color: #404040;
 }
+
+#network {
+  height: 100%;
+  position: fixed;
+  width: 40%;
+  background: linear-gradient(to bottom right, rgba(200,200,200,0), rgba(255,255,255,0)); /* Modify this to add color */
+}
 </style>
+
 <body>
 <!-- Sidebar with image -->
 <nav class="w3-sidebar w3-hide-medium w3-hide-small w3-animate-opacity" style="width:40%;">
   <div class="w3-display-container bgimg">
-      <div class="w3-container w3-display-middle">
+      <canvas id="network"></canvas>
+      <div class="w3-container w3-display-topmiddle" style="margin-top: 40px">
         <img src="./images/naresh_3.jpeg" alt="Boss" style="width:100%;box-shadow: 5px 5px 20px #888888;" class="w3-circle">
+      </div>
+      <div class="w3-display-middle" style="margin-top: 16%;">
+        <div class="w3-bar-block w3-center">
+          <a href="#home" class="w3-bar-item w3-button w3-text-dark-gray w3-round-large w3-hover-opacity w3-hover-black">Home</a>
+          <a href="#blog" class="w3-bar-item w3-button w3-text-dark-gray w3-hover-black w3-round-large w3-hover-opacity w3-hover-black">My Blog</a>
+          <a href="#projects" class="w3-bar-item w3-button w3-text-dark-gray w3-hover-black w3-round-large w3-hover-opacity w3-hover-black">Projects</a>
+          <a href="#publications" class="w3-bar-item w3-button w3-text-dark-gray w3-hover-black w3-round-large w3-hover-opacity w3-hover-black">Publications</a>
+          <a href="#contact" class="w3-bar-item w3-button w3-text-dark-gray w3-hover-black w3-round-large w3-hover-opacity w3-hover-black">Contact</a>
+          <a href="online_resume.html" class="w3-bar-item w3-button w3-text-dark-gray w3-hover-black w3-round-large w3-hover-opacity w3-hover-black">Online Resume</a>
+        </div>
+      </div>
+      <div class="w3-container w3-display-bottommiddle" style="width: 50%; margin-bottom: 2%">
         <h3 class="w3-center" style="color:black; font-family: Satisfy">Naresh Nagabushan</h3>
-        <div class="w3-row w3-margin-left">
-          <a href="https://github.com/Naresh1318"><i class="fa fa-github w3-hover-opacity w3-xlarge w3-col s3"></i></a>
-          <a href="https://www.linkedin.com/in/naresh-nagabushan-2946b013a"><i class="fa fa-linkedin w3-hover-opacity w3-xlarge w3-col s3"></i></a>
-          <a href="https://twitter.com/Naresh_Reddy_"><i class="fa fa-twitter w3-hover-opacity w3-xlarge w3-col s3"></i></a>
-          <a href="https://www.facebook.com/rnaresh.n"><i class="fa fa-facebook-official w3-hover-opacity w3-xlarge w3-col s3"></i></a>
+        <div class="w3-row-padding">
+          <div class="w3-quarter">
+            <a href="https://github.com/Naresh1318"><i class="fa fa-github w3-hover-opacity w3-xlarge w3-col s3"></i></a>
+          </div>
+          <div class="w3-quarter">
+            <a href="https://www.linkedin.com/in/naresh-nagabushan-2946b013a"><i class="fa fa-linkedin w3-hover-opacity w3-xlarge w3-col s3"></i></a>
+          </div>
+          <div class="w3-quarter">
+            <a href="https://twitter.com/Naresh_Reddy_"><i class="fa fa-twitter w3-hover-opacity w3-xlarge w3-col s3"></i></a>
+          </div>
+          <div class="w3-quarter">
+            <a href="https://www.facebook.com/rnaresh.n"><i class="fa fa-facebook-official w3-hover-opacity w3-xlarge w3-col s3"></i></a>
+          </div>
         </div>
       </div>
   </div>
@@ -61,17 +91,15 @@ a {
     <a href="#projects" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Projects</a>
     <a href="#publications" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Publications</a>
     <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
+    <a href="online_resume.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Online Resume</a>
   </div>
-  <span style="margin-left: 33%;" class="w3-hover-black w3-text-grey w3-margin-top w3-hide-small"><a href="online_resume.html">Online Resume</a></span>
-  <span style="margin-left: 20%;" class="w3-hover-black w3-text-grey w3-margin-top w3-large w3-hide-large w3-hide-medium"><a href="online_resume.html">Online Resume</a></span>
-
 </nav>
 
 <!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:40%">
+<div id="#home" class="w3-main w3-padding-large" style="margin-left:40%;">
 
   <!-- Menu icon to open sidebar -->
-  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black w3-hide-large" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
   <!-- Header -->
   <header class="w3-container w3-center w3-animate-opacity" style="padding:128px 16px" id="home">
@@ -82,29 +110,24 @@ a {
     <p class="typing-effect description w3-hide-large w3-hide-medium " style="font-family: 'Source Code Pro', monospace;">Undergrad interested in AI.</p>
     <img src="./images/naresh_3.jpeg" class="w3-image w3-hide-large w3-hide-small w3-circle" style="display:block;width:60%;margin:auto;box-shadow: 5px 5px 20px #888888;">
     <img src="./images/naresh_3.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-circle" width="1000" height="1333" style="box-shadow: 5px 5px 20px #888888;width:60%;">
-    <div class="w3-row w3-margin-left w3-hide-large w3-margin-top">
-      <a href="https://github.com/Naresh1318"><i class="fa fa-github w3-hover-opacity w3-xlarge w3-col s3"></i></a>
-      <a href="https://www.linkedin.com/in/naresh-nagabushan-2946b013a"><i class="fa fa-linkedin w3-hover-opacity w3-xlarge w3-col s3"></i></a>
-      <a href="https://twitter.com/Naresh_Reddy_"><i class="fa fa-twitter w3-hover-opacity w3-xlarge w3-col s3"></i></a>
-      <a href="https://www.facebook.com/rnaresh.n"><i class="fa fa-facebook-official w3-hover-opacity w3-xlarge w3-col s3"></i></a>
-    </div>
     <br>
     <span class="w3-hide-large w3-hide-medium">
         <br>
         <br>
     </span>
-    <button class="w3-button w3-light-grey w3-padding-large">
+    <button class="w3-button w3-light-grey w3-padding-large w3-round-large">
       <a href="https://goo.gl/pfXJZv"><i class="fa fa-download"></i> Download Resume</a>
     </button>
 
     <!-- Down Button -->
     <a href="#blog" class="w3-hide-small w3-hide-medium">
-      <div class="container" style="margin-left: 47%; margin-top: 15%">
+      <div class="w3-container" style="margin-left: 47%; margin-top: 15%">
         <div class="chevron"></div>
         <div class="chevron"></div>
         <div class="chevron"></div>
       </div>
     </a>
+
   </header>
 
   <!-- My Blog -->
@@ -206,7 +229,7 @@ a {
   </div>
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-xlarge" style="margin:-24px; background: linear-gradient(to bottom right, #EEEEEE, #CCCCCC );">
    <a href="https://github.com/Naresh1318"><i class="fa fa-github w3-hover-opacity w3-xlarge"></i></a>
    <a href="https://www.linkedin.com/in/naresh-nagabushan-2946b013a"><i class="fa fa-linkedin w3-hover-opacity w3-xlarge"></i></a>
    <a href="https://twitter.com/Naresh_Reddy_"><i class="fa fa-twitter w3-hover-opacity w3-xlarge"></i></a>
@@ -261,6 +284,5 @@ $(document).ready(function(){
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
-
 </body>
 </html>
