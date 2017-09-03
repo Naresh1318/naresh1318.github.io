@@ -53,6 +53,9 @@
         border:1px solid gray;
         box-shadow: 0 0 10px #CCCCCC;
     }
+    .bottom-shadow {
+        box-shadow: 20px 0 10px #CCCCCC;
+    }
 </style>
 
 <body>
@@ -74,7 +77,7 @@
             </div>
         </div>
         <div class="w3-container w3-display-bottommiddle" style="width: 50%; margin-bottom: 2%">
-            <h3 class="w3-center" style="color:black; font-family: Satisfy">Naresh Nagabushan</h3>
+            <!-- <h3 class="w3-center" style="color:black; font-family: Satisfy">Naresh Nagabushan</h3> -->
             <div class="w3-row-padding">
                 <div class="w3-quarter">
                     <a href="https://github.com/Naresh1318"><i class="fa fa-github w3-hover-opacity w3-xlarge w3-col s3"></i></a>
@@ -110,35 +113,67 @@
 <!-- Page Content -->
 <div id="#home" class="w3-main w3-padding-large" style="margin-left:30%;">
 
+    <!-- Navbar for large screens -->
+    <div class="w3-top w3-hide-small w3-hide-medium">
+        <div class="w3-bar" id="myNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-xlarge" style="margin-left:27%;"><span style="color:black; font-family: Satisfy">Naresh Nagabushan</span></a>
+        </div>
+    </div>
+
+
+    <!-- Navbar for small and medium screens -->
+    <div class="w3-top w3-hide-large">
+        <div class="w3-bar w3-hide-large" id="mySmallNavbar">
+            <a href="#home" class="w3-bar-item w3-button w3-xlarge" style="margin-left:25%;"><span style="color:black; font-family: Satisfy">Naresh Nagabushan</span></a>
+        </div>
+    </div>
+
     <!-- Menu icon to open sidebar -->
     <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black w3-hide-large" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
     <!-- Header -->
-    <header class="w3-container w3-center w3-animate-opacity" style="padding:128px 16px" id="home">
-        <h1 class="w3-jumbo w3-hide-small w3-hide-medium"><b>Hey !<br> I'm Naresh</b></h1>
-        <h1 class="w3-jumbo w3-hide-large w3-hide-medium"><b>Naresh</b></h1>
+    <header class="w3-container w3-animate-opacity" style="padding:128px 16px" id="home">
+
+        <p class="typing-effect w3-jumbo w3-hide-small w3-hide-medium" style="font-family: 'Source Code Pro', monospace;">
+            Hey!
+        </p>
+
+        <p class="w3-large w3-hide-small w3-hide-medium description" style="margin-top:-100px; padding-left: 65px; font-family: 'Source Code Pro', monospace;">
+            I'm Naresh, a Master's student at Virginia Tech interested in AI and its impact on our lives.
+        </p>
+
+        <!-- <h1 class="w3-jumbo w3-hide-large w3-hide-medium"><b>Naresh</b></h1>
         <p class="typing-effect description w3-hide-medium w3-hide-small" style="font-family: 'Source Code Pro', monospace;">Undergrad interested in AI, Cognitive Science and its impact on mankind.</p>
         <p class="typing-effect description w3-hide-large w3-hide-small" style="font-family: 'Source Code Pro', monospace;">Undergrad interested in AI, Cognitive Science and its impact on mankind.</p>
-        <p class="typing-effect description w3-hide-large w3-hide-medium " style="font-family: 'Source Code Pro', monospace;">Undergrad interested in AI.</p>
+        <p class="typing-effect description w3-hide-large w3-hide-medium " style="font-family: 'Source Code Pro', monospace;">Undergrad interested in AI.</p> -->
         <img src="./images/naresh_3.jpeg" class="w3-image w3-hide-large w3-hide-small w3-circle" style="display:block;width:60%;margin:auto;box-shadow: 5px 5px 20px #BBBBBB;">
-        <img src="./images/naresh_3.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-circle" width="1000" height="1333" style="box-shadow: 5px 5px 20px #BBBBBB;width:60%;">
+        <img src="./images/naresh_3.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-circle" width="1000" height="1333" style="box-shadow: 5px 5px 20px #BBBBBB; width:60%; margin-left: 20%;">
 
-        <br>
-        <p class="w3-hide">
-            Write about myself here
+        <!-- About Small amd medium screen -->
+        <p class="w3-large w3-hide-large w3-center description" style="padding-left: 5%; margin-top: 10%; font-family: 'Source Code Pro', monospace;">
+            Hey!, I'm Naresh, a Master's student at Virginia Tech interested in AI and its impact on our lives.
         </p>
+
 
         <span class="w3-hide-large w3-hide-medium">
             <br>
             <br>
         </span>
 
-        <button class="w3-button w3-light-grey w3-padding-large w3-round-large">
-            <a href="https://goo.gl/pfXJZv"><i class="fa fa-download"></i> Download Resume</a>
-        </button>
+        <div class="w3-center w3-hide-small w3-hide-medium" style="margin-top: 12%;">
+            <button class="w3-button w3-light-grey w3-padding-large w3-round-large">
+                <a href="https://goo.gl/pfXJZv"><i class="fa fa-download"></i> Download Resume</a>
+            </button>
+        </div>
+
+        <div class="w3-center w3-hide-large" style="margin-top: 12%; margin-left: 10%">
+            <button class="w3-button w3-light-grey w3-padding-large w3-round-large">
+                <a href="https://goo.gl/pfXJZv"><i class="fa fa-download"></i> Download Resume</a>
+            </button>
+        </div>
 
         <!-- Down Button -->
-        <a href="#blog" class="w3-hide-small w3-hide-medium">
+        <a href="#blog" class="w3-hide-medium">
             <div class="w3-container" style="margin-left: 47%; margin-top: 15%">
                 <div class="chevron"></div>
                 <div class="chevron"></div>
@@ -150,7 +185,7 @@
 
     <!-- Blog -->
     <div class="w3-padding-32 w3-content" id="blog">
-        <h2><i class="fa fa-paper-plane w3-margin-right w3-xxlarge w3-text-black w3-hover-text-grey" style="margin:0 -30px"></i>Blog</h2>
+        <h2><i class="fa fa-paper-plane w3-margin-right w3-xxlarge w3-text-black w3-hover-text-grey" style="margin:0 -20px"></i>Blog</h2>
         <hr class="w3-opacity">
 
         <div class="w3-container" style="margin:0 -30px">
@@ -210,7 +245,7 @@
 
     <!-- Projects -->
     <div class="w3-content w3-justify w3-padding-32" id="projects">
-        <h2><i class="fa fa-flask fa-fw w3-margin-right w3-xxlarge w3-text-black w3-hover-text-grey" style="margin:0 -30px"></i>Projects</h2>
+        <h2><i class="fa fa-flask fa-fw w3-margin-right w3-xxlarge w3-text-black w3-hover-text-grey" style="margin:0 -20px"></i>Projects</h2>
         <hr>
 
         <div class="w3-container" style="margin:0 -30px">
@@ -283,7 +318,7 @@
         <br>
 
         <!-- Publications -->
-        <h2 class="w3-margin-top" style="margin:0 -30px"><i class="fa fa-clipboard fa-fw w3-margin-right w3-xxlarge w3-text-black w3-hover-text-grey"></i>Publication</h2>
+        <h2 class="w3-margin-top" style="margin:0 -20px"><i class="fa fa-clipboard fa-fw w3-margin-right w3-xxlarge w3-text-black w3-hover-text-grey"></i>Publication</h2>
         <hr>
         <div class="w3-container" style="margin:0 -30px">
             <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
@@ -299,7 +334,7 @@
 
     <!-- Contact -->
     <div class="w3-padding-32 w3-content" id="contact_">
-        <h2 style="margin:0 -30px"><i class="fa fa-comments-o fa-fw w3-margin-right w3-xxlarge w3-text-black w3-hover-text-grey"></i> Contact</h2>
+        <h2 style="margin:0 -20px"><i class="fa fa-comments-o fa-fw w3-margin-right w3-xxlarge w3-text-black w3-hover-text-grey"></i> Contact</h2>
         <hr class="w3-opacity"/>
         <p class="w3-opacity w3-center"><i>Wanna Chat? Drop a note!</i></p>
         <div class="w3-row w3-padding-32">
@@ -388,6 +423,27 @@ $(document).ready(function(){
         } // End if
     });
 });
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " bottom-shadow" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" bottom-shadow w3-animate-top w3-white", "");
+    }
+
+    var navbar = document.getElementById("mySmallNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " bottom-shadow" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" bottom-shadow w3-animate-top w3-white", "");
+    }
+
+}
+
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
 </body>

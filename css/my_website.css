@@ -65,11 +65,11 @@
 @-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
 
 .typing-effect {
-	border-right: .1em solid black;
-	width: 90%;
+	border-right: .05em solid black;
+	width: 13%;
 	margin: 2em 1em;
 	white-space: nowrap;
 	overflow: hidden;
-	-webkit-animation: typing 3s steps(78, end),
-	blink-caret .3s step-end infinite alternate;
+	-webkit-animation: typing 1s steps(50, end),
+	blink-caret .5s step-end infinite alternate;
 }
