@@ -70,6 +70,6 @@
 	margin: 2em 1em;
 	white-space: nowrap;
 	overflow: hidden;
-	-webkit-animation: typing 1s steps(20, end),
+	-webkit-animation: typing 1s steps(25, end),
 	blink-caret .5s step-end infinite alternate;
 }
