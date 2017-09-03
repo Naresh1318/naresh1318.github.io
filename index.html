@@ -37,14 +37,27 @@
     #network {
         height: 100%;
         position: fixed;
-        width: 40%;
+        width: 30%;
         background: linear-gradient(to bottom right, rgba(200,200,200,0), rgba(255,255,255,0)); /* Modify this to add color */
+    }
+
+    input:focus {
+        outline: none !important;
+        border:1px solid gray;
+        box-shadow: 0 0 10px #CCCCCC;
+    }
+
+    textarea:focus {
+        outline: none !important;
+        border:1px solid gray;
+        box-shadow: 0 0 10px #CCCCCC;
     }
 </style>
 
 <body>
+
 <!-- Sidebar with image -->
-<nav class="w3-sidebar w3-hide-medium w3-hide-small w3-animate-opacity" style="width:40%;">
+<nav class="w3-sidebar w3-hide-medium w3-hide-small w3-animate-opacity" style="width:30%;">
     <div class="w3-display-container bgimg">
         <canvas id="network"></canvas>
         <div class="w3-container w3-display-topmiddle" style="margin-top: 40px">
@@ -57,7 +70,6 @@
                 <a href="#projects" class="w3-bar-item w3-button w3-text-dark-gray w3-hover-black w3-round-large w3-hover-opacity w3-hover-black">Projects</a>
                 <a href="#publications" class="w3-bar-item w3-button w3-text-dark-gray w3-hover-black w3-round-large w3-hover-opacity w3-hover-black">Publications</a>
                 <a href="#contact" class="w3-bar-item w3-button w3-text-dark-gray w3-hover-black w3-round-large w3-hover-opacity w3-hover-black">Contact</a>
-                <a href="online_resume.html" class="w3-bar-item w3-button w3-text-dark-gray w3-hover-black w3-round-large w3-hover-opacity w3-hover-black">Online Resume</a>
             </div>
         </div>
         <div class="w3-container w3-display-bottommiddle" style="width: 50%; margin-bottom: 2%">
@@ -91,30 +103,35 @@
         <a href="#projects" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Projects</a>
         <a href="#publications" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Publications</a>
         <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
-        <a href="online_resume.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Online Resume</a>
     </div>
 </nav>
 
 <!-- Page Content -->
-<div id="#home" class="w3-main w3-padding-large" style="margin-left:40%;">
+<div id="#home" class="w3-main w3-padding-large" style="margin-left:30%;">
 
     <!-- Menu icon to open sidebar -->
     <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black w3-hide-large" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
 
     <!-- Header -->
     <header class="w3-container w3-center w3-animate-opacity" style="padding:128px 16px" id="home">
-        <h1 class="w3-jumbo w3-hide-small w3-hide-medium"><b>Naresh<br>Nagabushan</b></h1>
+        <h1 class="w3-jumbo w3-hide-small w3-hide-medium"><b>Hey !<br> I'm Naresh</b></h1>
         <h1 class="w3-jumbo w3-hide-large w3-hide-medium"><b>Naresh</b></h1>
         <p class="typing-effect description w3-hide-medium w3-hide-small" style="font-family: 'Source Code Pro', monospace;">Undergrad interested in AI, Cognitive Science and its impact on mankind.</p>
         <p class="typing-effect description w3-hide-large w3-hide-small" style="font-family: 'Source Code Pro', monospace;">Undergrad interested in AI, Cognitive Science and its impact on mankind.</p>
         <p class="typing-effect description w3-hide-large w3-hide-medium " style="font-family: 'Source Code Pro', monospace;">Undergrad interested in AI.</p>
         <img src="./images/naresh_3.jpeg" class="w3-image w3-hide-large w3-hide-small w3-circle" style="display:block;width:60%;margin:auto;box-shadow: 5px 5px 20px #BBBBBB;">
         <img src="./images/naresh_3.jpeg" class="w3-image w3-hide-large w3-hide-medium w3-circle" width="1000" height="1333" style="box-shadow: 5px 5px 20px #BBBBBB;width:60%;">
+
         <br>
+        <p class="w3-hide">
+            Write about myself here
+        </p>
+
         <span class="w3-hide-large w3-hide-medium">
             <br>
             <br>
         </span>
+
         <button class="w3-button w3-light-grey w3-padding-large w3-round-large">
             <a href="https://goo.gl/pfXJZv"><i class="fa fa-download"></i> Download Resume</a>
         </button>
@@ -132,10 +149,10 @@
 
     <!-- Blog -->
     <div class="w3-padding-32 w3-content" id="blog">
-        <h2><i class="fa fa-paper-plane w3-margin-right w3-xxlarge w3-text-black w3-hover-text-grey"></i>Blog</h2>
+        <h2><i class="fa fa-paper-plane w3-margin-right w3-xxlarge w3-text-black w3-hover-text-grey" style="margin:0 -30px"></i>Blog</h2>
         <hr class="w3-opacity">
 
-        <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-container" style="margin:0 -30px">
             <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
                 <a href="https://medium.com/@rnaresh.n/a-wizards-guide-to-adversarial-autoencoders-part-4-classify-mnist-using-1000-labels-2ca08071f95">
                     <h2 class="w3-xlarge w3-text-dark-grey">A wizard’s guide to Adversarial Autoencoders: Part 4<span style="float: right; font-size: 12px;">August 27th 2017</span></h2>
@@ -146,7 +163,7 @@
 
         <br>
 
-        <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-container" style="margin:0 -30px">
             <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
                 <a href="https://medium.com/towards-data-science/a-wizards-guide-to-adversarial-autoencoders-part-3-disentanglement-of-style-and-content-89262973a4d7">
                     <h2 class="w3-xlarge w3-text-dark-grey">A wizard’s guide to Adversarial Autoencoders: Part 3<span style="float: right; font-size: 12px;">August 19th 2017</span></h2>
@@ -157,7 +174,7 @@
 
         <br>
 
-        <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-container" style="margin:0 -30px">
             <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
                 <a href="https://medium.com/towards-data-science/a-wizards-guide-to-adversarial-autoencoders-part-2-exploring-latent-space-with-adversarial-2d53a6f8a4f9">
                     <h2 class="w3-xlarge w3-text-dark-grey">A wizard’s guide to Adversarial Autoencoders: Part 2<span style="float: right; font-size: 12px;">August 7th 2017</span></h2>
@@ -168,7 +185,7 @@
 
         <br>
 
-        <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-container" style="margin:0 -30px">
             <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
                 <a href="https://medium.com/towards-data-science/a-wizards-guide-to-adversarial-autoencoders-part-1-autoencoder-d9a5f8795af4">
                     <h2 class="w3-xlarge w3-text-dark-grey">A wizard’s guide to Adversarial Autoencoders: Part 1,<span style="float: right; font-size: 12px;">July 31th 2017</span> Autoencoder?</h2>
@@ -179,7 +196,7 @@
 
         <br>
 
-        <div class="w3-container" style="margin:0 -16px">
+        <div class="w3-container" style="margin:0 -30px">
             <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
                 <a href="https://medium.com/@rnaresh.n/gans-n-roses-c6652d513260">
                     <h2 class="w3-xlarge w3-text-dark-grey">GANs N' Roses <span style="float: right; font-size: 12px;">June 30th 2017</span></h2>
@@ -188,79 +205,135 @@
             </div>
         </div>
 
-
     </div>
 
     <!-- Projects -->
     <div class="w3-content w3-justify w3-padding-32" id="projects">
-        <h2><i class="fa fa-flask fa-fw w3-margin-right w3-xxlarge w3-text-black w3-hover-text-grey"></i>Projects</h2>
+        <h2><i class="fa fa-flask fa-fw w3-margin-right w3-xxlarge w3-text-black w3-hover-text-grey" style="margin:0 -30px"></i>Projects</h2>
         <hr>
-        <a href="https://github.com/Naresh1318/DiagnosisPredictor" style="text-decoration: none">
-            <div class="w3-container w3-card-2 w3-hover-shadow w3-round-medium">
-                <h4 class="w3-text-dark-grey">Diagnosis Predictor</h4>
-                <p>Predicts chronic diseases using a patients previous history.</p>
-            </div>
-        </a>
-        <br>
-        <a href="https://github.com/Naresh1318/ICU_Patient_Mortality" style="text-decoration: none">
-            <div class="w3-container w3-card-2 w3-hover-shadow w3-round-medium">
-                <h4 class="w3-text-dark-grey">ICU Patient Deterioration Prediction</h4>
-                <p>Use artificial neural networks along with various feature selection and extraction algorithms to predict the ICU patient’s mortality.</p>
-            </div>
-        </a>
-        <br>
-        <a href="https://github.com/Naresh1318/Style_Transfer" style="text-decoration: none">
-            <div class="w3-container w3-card-2 w3-hover-shadow w3-round-medium">
-                <h4 class="w3-text-dark-grey">AI Video artist</h4>
-                <p>Converts a video to a style specified by a painting using the vgg16 network.</p>
-            </div>
-        </a>
-        <br>
-        <a href="https://github.com/Naresh1318/TwitterSentiment" style="text-decoration: none">
-            <div class="w3-container w3-card-2 w3-hover-shadow w3-round-medium">
-                <h4 class="w3-text-dark-grey">Twitter Sentiment Analysis</h4>
-                <p>Analyze the general opinion of a topic among people using the Twitter API and textblob.</p>
-            </div>
-        </a>
-        <br>
-        <a href="https://github.com/Naresh1318/Effect_of_injected_noise_in_deep_NN" style="text-decoration: none">
-            <div class="w3-container w3-card-2 w3-hover-shadow w3-round-medium">
-                <h4 class="w3-text-dark-grey">Effect of Injected Noise in Deep Neural Networks</h4>
-                <p>Add noise to the operation of a fully connected deep neural network based on the institution from crosstalk in VLSI circuits.</p>
-            </div>
-        </a>
-        <br>
-        <a href="https://github.com/Naresh1318/Movieclassifier" style="text-decoration: none">
-            <div class="w3-container w3-card-2 w3-hover-shadow w3-round-medium">
-                <h4 class="w3-text-dark-grey">Movie Review Classifier</h4>
-                <p>Classifies a movie as positive or negative based on the reviews written using Logistic Regression.</p>
-            </div>
-        </a>
 
-        <br id="publications">
+        <div class="w3-container" style="margin:0 -30px">
+            <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+                <a href="https://github.com/Naresh1318/DiagnosisPredictor">
+                    <h2 class="w3-xlarge w3-text-dark-grey">Diagnosis Predictor</h2>
+                    <p class="description">Predicts chronic diseases using a patients previous history.</p>
+                </a>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="w3-container" style="margin:0 -30px">
+            <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+                <a href="https://github.com/Naresh1318/ICU_Patient_Mortality">
+                    <h2 class="w3-xlarge w3-text-dark-grey">ICU Patient Deterioration Prediction</h2>
+                    <p class="description">Use artificial neural networks along with various feature selection and extraction algorithms to predict the ICU patient’s mortality.</p>
+                </a>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="w3-container" style="margin:0 -30px">
+            <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+                <a href="https://github.com/Naresh1318/Style_Transfer">
+                    <h2 class="w3-xlarge w3-text-dark-grey">AI Video artist</h2>
+                    <p class="description">Converts a video to a style specified by a painting using the vgg16 network.</p>
+                </a>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="w3-container" style="margin:0 -30px">
+            <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+                <a href="https://github.com/Naresh1318/TwitterSentiment">
+                    <h2 class="w3-xlarge w3-text-dark-grey">Twitter Sentiment Analysis</h2>
+                    <p class="description">Analyze the general opinion of a topic among people using the Twitter API and textblob.</p>
+                </a>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="w3-container" style="margin:0 -30px">
+            <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+                <a href="https://github.com/Naresh1318/Effect_of_injected_noise_in_deep_NN">
+                    <h2 class="w3-xlarge w3-text-dark-grey">Effect of Injected Noise in Deep Neural Networks</h2>
+                    <p class="description">Add noise to the operation of a fully connected deep neural network based on the institution from crosstalk in VLSI circuits.</p>
+                </a>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="w3-container" style="margin:0 -30px">
+            <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+                <a href="https://github.com/Naresh1318/Movieclassifier">
+                    <h2 class="w3-xlarge w3-text-dark-grey">Movie Review Classifier</h2>
+                    <p class="description">Classifies a movie as positive or negative based on the reviews written using Logistic Regression.</p>
+                </a>
+            </div>
+        </div>
+
+        <br>
+
+        <br>
+        <br>
 
         <!-- Publications -->
-        <h2 class="w3-margin-top"><i class="fa fa-clipboard fa-fw w3-margin-right w3-xxlarge w3-text-black w3-hover-text-grey"></i>Publication</h2>
+        <h2 class="w3-margin-top" style="margin:0 -30px"><i class="fa fa-clipboard fa-fw w3-margin-right w3-xxlarge w3-text-black w3-hover-text-grey"></i>Publication</h2>
         <hr>
-        <a href="https://github.com/Naresh1318/Effect_of_injected_noise_in_deep_NN" style="text-decoration: none">
-            <div class="w3-container w3-card-2 w3-hover-shadow w3-round-medium">
-                <h4 class="w3-text-dark-grey">Effect of Injected Noise in Deep Neural Networks</h4>
-                <p>Naresh Nagabushan, Nishank Sathish, Raghuram S,” Effect of Injected Noise in DeepNeural Networks,” 2016 IEEE International Conference on Computational Intelligenceand Computing Research (ICCIC).</p>
+        <div class="w3-container" style="margin:0 -30px">
+            <div class="w3-container w3-hover-shadow w3-round-medium w3-card-2">
+                <a href="https://github.com/Naresh1318/Effect_of_injected_noise_in_deep_NN">
+                    <h2 class="w3-xlarge w3-text-dark-grey">Effect of Injected Noise in Deep Neural Networks</h2>
+                    <p class="description">Naresh Nagabushan, Nishank Sathish, Raghuram S,” Effect of Injected Noise in DeepNeural Networks,” 2016 IEEE International Conference on Computational Intelligenceand Computing Research (ICCIC).</p>
+                </a>
             </div>
-        </a>
-    </div>
-
-    <!-- Contact Section -->
-    <div class="w3-padding-32 w3-content" id="contact" style="margin-bottom:64px">
-        <h2>Contact Me</h2>
-        <hr class="w3-opacity">
-
-        <div class="w3-section">
-            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Blacksburg, Virginia</p>
-            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>  rnaresh.n@gmail.com</p>
         </div>
-        <!-- End Contact Section -->
     </div>
+
+    <br>
+
+    <!-- Contact -->
+    <div class="w3-padding-32 w3-content" id="contact_">
+        <h2 style="margin:0 -30px"><i class="fa fa-comments-o fa-fw w3-margin-right w3-xxlarge w3-text-black w3-hover-text-grey"></i> Contact</h2>
+        <hr class="w3-opacity"/>
+        <p class="w3-opacity w3-center"><i>Wanna Chat? Drop a note!</i></p>
+        <div class="w3-row w3-padding-32">
+
+            <div class="w3-col m6 w3-large w3-margin-bottom">
+                <p>
+                    <i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right" style="width:30px"></i> Blacksburg, VA<br>
+                </p>
+                <p>
+                    <i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style="width:30px"> </i> Email: rnaresh.n@gmail.com<br>
+                </p>
+            </div>
+
+            <div class="w3-col m6">
+                <p>
+                    <form action="http://formspree.io/rnaresh.n@gmail.com" target="_blank" method="POST">
+                        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="text" placeholder="Name" name="Name">
+                            </div>
+                            <div class="w3-half">
+                                <input class="w3-input w3-border" type="email" placeholder="Email" name="Email">
+                            </div>
+                        </div>
+                        <input class="w3-input w3-border" type="text" placeholder="Message*" name="Message" required>
+                        <button class="w3-section w3-button w3-light-grey w3-padding-large w3-round-large" type="submit">
+                            <i class="fa fa-send"></i> Send
+                        </button>
+                <p class="w3-opacity w3-right">* Field is required. <br/> &nbsp So, yeah you can be anonymous.</p>
+                </form>
+                </p>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Footer -->
     <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-xlarge" style="margin:-24px; background: linear-gradient(to bottom right, #EEEEEE, #CCCCCC );">
